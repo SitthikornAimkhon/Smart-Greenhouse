@@ -1,1 +1,0 @@
-DATABASE_URL = "mongodb+srv://sor:bTivlkcSKtoBZck3@cluster0.ic4pth1.mongodb.net/EM-Project?retryWrites=true&w=majority"
