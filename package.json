@@ -1,4 +1,5 @@
 {
+  "homepage": "https://SitthikornAimkhon.github.io/Smart-Greenhouse",
   "name": "database_system_project",
   "version": "0.1.0",
   "private": true,
@@ -20,6 +21,7 @@
     "bootstrap": "^5.2.3",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "gh-pages": "^5.0.0",
     "prisma": "^4.12.0",
     "react": "^18.2.0",
     "react-datepicker": "^4.8.0",
@@ -30,6 +32,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
