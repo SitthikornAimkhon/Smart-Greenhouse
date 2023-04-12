@@ -5,7 +5,7 @@ exports.getData = async (req, res) => {
     try{
         console.log(req.body)
         const recData = await db.data.create({
-             data: req.body,
+            data: req.body,
             })
         res.json(recData);
     } catch(error) {
