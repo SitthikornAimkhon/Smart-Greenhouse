@@ -10,9 +10,9 @@ const CONFIG = {
 function handoff(){
     if(!CONFIG.serve) app.use(cors());
     app.use(expressJS.json());
-    app.use("/api",api);
+    app.use("/Smart-Greenhouse/api",api);
     if(CONFIG.serve) app.use(serve);
-    else app.use("/",(req,res)=>{
+    else app.use("/Smart-Greenhouse",(req,res)=>{
         res.status(403);
         res.json({error:true,message:"This server only serve API."});
     });
